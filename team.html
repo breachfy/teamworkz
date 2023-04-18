@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Teamworkz</title>
     <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.10/build/player/lottie.min.js"></script>
     <style>
@@ -42,14 +43,14 @@
       
       h1 {
         font-family: 'Recoleta', sans-serif;
-        font-size: 4em;
+        font-size: 3rem;
         font-weight: bold;
         text-align: center;
         margin: 0;
       }
       
       p {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         font-weight: normal;
         text-align: center;
         margin: 0;
@@ -64,7 +65,7 @@
         text-align: center; /* alinear el texto */
         text-decoration: none; /* sin subrayado */
         display: inline-block; /* comportamiento en línea */
-        font-size: 1.2em; /* tamaño de la letra */
+        font-size: 1.2rem; /* tamaño de la letra */
         border-radius: 50px; /* redondear bordes */
         margin-top: 20px; /* margen superior */
         cursor: pointer; /* cursor de la mano */
@@ -77,6 +78,21 @@
       button a {
         color: white;
         text-decoration: none;
+      }
+
+      /* Media query para pantallas pequeñas */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        button {
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
