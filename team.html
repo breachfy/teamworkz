@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Teamworkz</title>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.10/build/player/lottie.min.js"></script>
+    <style>
+      /* Estilo para el contenedor de la animación */
+      #animation-container {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #animation {
+        width: 100%;
+        height: 100%;
+      }
+      
+      body {
+        background-color: #F8F4F2;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      @font-face {
+        font-family: 'Recoleta';
+        src: url('Recoleta-Bold.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+      }
+      
+      .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      h1 {
+        font-family: 'Recoleta', sans-serif;
+        font-size: 4em;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+      }
+      
+      p {
+        font-size: 1.2em;
+        font-weight: normal;
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+      }
+
+      button {
+        background-color: #4CAF50; /* color del fondo */
+        border: none; /* sin borde */
+        color: white; /* color del texto */
+        padding: 15px 32px; /* tamaño del padding */
+        text-align: center; /* alinear el texto */
+        text-decoration: none; /* sin subrayado */
+        display: inline-block; /* comportamiento en línea */
+        font-size: 1.2em; /* tamaño de la letra */
+        border-radius: 50px; /* redondear bordes */
+        margin-top: 20px; /* margen superior */
+        cursor: pointer; /* cursor de la mano */
+      }
+
+      button:hover {
+        background-color: #3e8e41; /* cambio de color al pasar el ratón */
+      }
+
+      button a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Teamworkz</h1>
+      <p>Apúntate en la lista de espera</p>
+      <button>
+        <a href="https://k86qmlq3hag.typeform.com/to/qBcVwe3S" target="_blank" rel="noopener noreferrer">
+          Regístrate
+        </a>
+      </button>
+    </div>
+    
+    <div id="animation-container">
+      <div id="animation"></div>
+    </div>
+    
+    <script>
+      // Cargar la animación desde la URL
+      var animation = lottie.loadAnimation({
+        container: document.getElementById('animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets8.lottiefiles.com/packages/lf20_penwgnf8.json'
+      });
+// Ajustar tamaño de la animación al tamaño del contenedor
+      animation.addEventListener('loaded_images', function() {
+        animation.resize();
+      });
+    </script>
+  </body>
+</html>
